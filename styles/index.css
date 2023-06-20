@@ -1,0 +1,282 @@
+/* Cambiar color y tamano de texto a toda clase div adentro de body se puede quitar body la verdad*/
+body .div {
+    color: var(--white);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 30;
+    max-height: 40;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+}
+
+#video {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+#text-video {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: var(--secondary2);
+    display: block;
+    padding: 20px;
+    line-height: 260%;
+}
+
+#over-video {
+    position: absolute;
+    top: 200px;
+    z-index: 2;
+    margin-top: 10px;
+    padding: 35px;
+    /* display: block; */
+}
+
+#textOverVideo {
+    position: absolute;
+    z-index: 1; 
+}
+
+/* Tamaño de la letra del video */
+#text-p{
+    font-size: 58px;
+    text-align: center; 
+ 
+}
+
+@media only screen and (max-width: 767px) {
+    /* Cambiar tamaño de letra del #text-p para pantallas de celular */
+    #text-p {
+      font-size: 30px;
+    }
+  }
+
+#video-container {
+    position: relative;
+}
+
+.btnVerMas {
+    background-color: white;
+    border-color: transparent;
+    color: black;
+
+}
+
+.btnVerMas:hover {
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* estilos tarjetas carrusel */
+
+.card-body {
+    border-color: transparent;
+}
+
+.card-title {
+    color: #EFB817;
+    font-size: 80px;
+
+}
+
+.card-text {
+    color: black;
+    font-size: 2rem;
+}
+
+/* titulo de curiosidades */
+#info{
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    
+}
+
+
+#titulo-info{
+    font-size: 65px !important;
+    text-align: center !important;
+    color: white;
+
+}
+
+/* Esta clase cambia el tono del fondo de la tarjeta*/
+.card-body-info{
+    margin: 10px;
+    align-self: center;
+    border-radius: 10px;
+    display: flex;
+    background-color: var(--primary2);
+    color: var(--white);
+}
+
+/* Esta clase cambia el tono del fondo del texto*/
+.card-info{
+    width: 500px;
+    height: 400px;
+    margin: 32px;
+    background-color: var(--primary2);
+    border-color: transparent
+    
+}
+
+/* para centrar el contenido de las tarjetas info */
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-info{
+    font-size: 16px; 
+}
+
+.card-text-info{
+    font-size: 16px;
+}
+
+.modalLittleBoxes {
+    background-color: var(--primary);
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+
+/* h1 {
+    font-size: 100px;
+} */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+} */
+.container-MVV {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: transparent;
+}
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--primary);
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: white;
+  }
+}
+
+#breakers {
+    font-size: 10px;
+}

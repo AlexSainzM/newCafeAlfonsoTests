@@ -1,0 +1,57 @@
+
+ .colorText{
+    color: var(--primary);
+}
+
+.lightYellowText{
+    color: var(--secondary2);
+}
+
+.productCard {
+    background-color: var(--primary);
+    border-color: azure;
+    margin: 16px;
+}
+
+.card-img-top {
+    /* height: 200px; */
+    border-color: transparent;
+}
+
+.textCardHeight {
+    height: 57px;
+}
+
+.modalLittleBoxes {
+    background-color: var(--primary);
+    border-radius: 15px;
+}
+
+.btnVerMas {
+    background-color: white;
+    border-color: transparent;
+    color: black;
+
+}
+
+.btnVerMas:hover {
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    transition: 0.5s;
+}
+
+.btnBuyNow {
+    background-color: var(--primary2);
+    border-color: transparent;
+    color: var(--secondary2);
+
+}
+
+.btnBuyNow:hover {
+    background-color: var(--secondary);
+    border-color: transparent;
+    color: var(--primary);
+    transition: 0.7s;
+}
+
