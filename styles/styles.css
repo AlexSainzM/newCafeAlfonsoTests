@@ -4,10 +4,11 @@
 } */
 
 :root {
-    --primary: #2a1e1e;
-    --primary2: #412c30;
+    --primaryB: #000000;
+    --primaryG: #202020;
     --secondary: #EFB817;
-    --secondary2: #fff0e5;
+    --secondaryRed: #ef1717;
+    --secondaryCream: #fff0e5;
     --white: #FFFFFF;
     --black: #000000;
 }
@@ -35,7 +36,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: var(--primary2);
+    background-color: var(--primaryB);
 }
 
 /* Dummy div entre navbar y footter que se expande parue el */
@@ -46,33 +47,33 @@ article {
 
 /********************** NAVBAR **********************/
 .navbar {
-    background-color: var(--primary);
+    background-color: var(--primaryB);
 }
 
 .nav-link {
-    color: var(--secondary2);
-}
-
-.nav-link:hover {
     color: var(--white);
 }
 
+.nav-link:hover {
+    color: var(--secondary);
+}
+
 .navbar-brand {
-    color: var(--secondary2);
+    color: var(--white);
 }
 
 .navbar-brand:hover {
-    color: #c5c5c5;
+    color: var(--secondary);
 }
 
 .nav-icon {
-    color: var(--secondary2);
+    color: var(--white);
     font-size: 32px;
     margin-bottom: 16px;
 }
 
 .nav-icon:hover {
-    color: var(--white);
+    color: var(--secondary);
 }
 
 #nav-cart-container {
@@ -94,7 +95,7 @@ article {
     height: 20px;
     width: 20px;
     /* Color de circulo */
-    background-color: yellow;
+    background-color: var(--secondary);
     /* Cuadrado a circulo */
     border-radius: 16px;
     /* Centrar verticalmente texto en el circulo */
@@ -112,7 +113,7 @@ article {
 
 /* Aplica estilo a la clase footer */
 .footer {
-    background-color: var(--primary);
+    background-color: var(--primaryG);
 
     display: flex;
 
@@ -153,7 +154,7 @@ article {
 
 .footer-text {
     /* Color de texto */
-    color: var(--secondary2);
+    color: var(--secondaryCream);
 
     /* Sepracion entre el texto y los logos */
     margin-right: 20px;
@@ -165,7 +166,7 @@ article {
 
 /* Iconos con link en el footer */
 .footer a {
-    color: var(--secondary2);
+    color: var(--secondaryCream);
     font-size: 32px;
     margin: 5px;
     margin-bottom: 16px;
@@ -247,7 +248,7 @@ article {
     position: relative;
     height: 70px;
     width: 70px;
-    background-color: #1d1616;
+    background-color: var(--black);
     border-radius: 50%;
     /* siempre por delante */
     z-index: 2;
@@ -348,7 +349,7 @@ article {
     width: 125px;
     height: 45px;
     border-radius: 10px;
-    background-color: var(--primary2);
+    background-color: var(--primaryG);
     border-color: white;
     color: #fcbf6b;
     margin: 8px;
@@ -361,7 +362,7 @@ article {
     
     font-size: 24px;
     border-radius: 10px;
-    background-color: var(--primary2);
+    background-color: var(--primaryG);
     border-color: white;
     color: #fcbf6b;
 

@@ -51,12 +51,12 @@ navbar.innerHTML = `<nav class="navbar fixed-top navbar-expand-md sticky-top">
 	  <li class="nav-item"><a class="nav-link" href="./">Inicio</a></li>
 	  <li class="nav-item"><a class="nav-link" href="./contact.html">Contáctanos</a></li>
 	  <li class="nav-item"><a class="nav-link" href="./">Nosotros</a></li>
-	  <li class="nav-item"><a class="nav-link" href="./products.html">Productos</a></li>
-	  <li class="nav-item"><a id="nav-user" class="nav-link" href="./login.html">Ingresar</a></li>
+	  <li class="nav-item"><a class="nav-link" href="./">Productos</a></li>
+	  <li class="nav-item"><a id="nav-user" class="nav-link" href="./">Ingresar</a></li>
 	</ul>
   </div>
   <div id="nav-cart-container">
-	<a id="nav-cart" class="nav-icon" href="./cart.html"><i class="bi bi-cart2"></i></a>
+	<a id="nav-cart" class="nav-icon" href="./"><i class="bi bi-cart2"></i></a>
 	<p id="nav-cart-count">0</p>
   </div>
 </div>
